@@ -10,9 +10,9 @@
   "author": "Alexander Grischuk",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/centner/udemy-protractor/issues"
+    "url": "https://github.com/CarinaSvanqvist/ud_protractor/issues"
   },
-  "homepage": "https://gitlab.com/centner/udemy-protractor#readme",
+  "homepage": "https://github.com/CarinaSvanqvist/ud_protractor/blob/master/readme.md",
   "dependencies": {
     "dotenv": "^2.0.0",
     "protractor": "^3.2.2"

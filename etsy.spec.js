@@ -48,7 +48,7 @@ describe("Ëtsy MainPaige Register, Sign in", function () {
     */
     });
 
-    it('3. Should not sign in to account', function () {
+    xit('3. Should not sign in to account', function () {
 
         var usernameField = element(by.id('username-existing'));//find element and assign
         var userPasswordField = element(by.id('password-existing'));//find element and assign

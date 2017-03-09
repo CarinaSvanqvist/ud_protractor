@@ -16,11 +16,8 @@ describe('Test Cart on Etsy.com', function () {
     it("Should click on cart and see that it is emty", function () {
        
         commonObj.cartIcon.click();
-        cartPage.errorMessage();
-
         //element(by.css('[title="Cart"]')).click(); //Moved this to common, cause cart-icon is on many pages
         //var message = element(by.xpath('//*[@id="newempty"]/div/h2')); //moved this to cartPage, cause it is carPage-uniqe
-        
-       expect(message.getText()).toEqual("Your cart is empty.")
+        expect(cartPage.errorMessage.getText()).toEqual("Your cart is empty.")
     });
 });

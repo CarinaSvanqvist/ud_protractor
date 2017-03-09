@@ -18,7 +18,9 @@ exports.config = {
 
 
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ["../udemy-protractor/pages/home/login_etsy.spec.js", "../udemy-protractorpages/cart/cart_etsy.spec.js", "../udemy-protractor/pages/search/search_etsy.spec.js"],
+    specs: [//"../udemy-protractor/pages/home/login_etsy.spec.js", 
+        "../udemy-protractor/pages/cart/cart_etsy.spec.js"],
+        //"../udemy-protractor/pages/search/search_etsy.spec.js"],
     capabilities: {
         browserName: 'chrome',
         'chromeOptions': {

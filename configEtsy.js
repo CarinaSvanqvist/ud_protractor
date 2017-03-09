@@ -16,14 +16,22 @@ exports.config = {
         url: 'https://www.Etsy.com'
     },
 
+
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ["C:/Users/Carina/udemy-protractor/*etsy.spec.js"],
+    specs: ["../udemy-protractor/login_etsy.spec.js", "../udemy-protractor/cart_etsy.spec.js", "../udemy-protractor/search_etsy.spec.js"],
     capabilities: {
         browserName: 'chrome',
         'chromeOptions': {
             args: ['--test-type']
         }
     },
+
+    //suites: {
+    //    home: '../udemy-protractor login_etsy.spec.js',  //Can´t find spec, when using suite??!
+    //    cart: '../udemy-protractor cart_etsy.spec.js',
+    //    search: '../udemy-protractor search_etsy.spec.js',
+
+    //},
     onPrepare: function () {
         browser.ignoreSynchronization = true; //Don´t wait for Angular
         jasmine.getEnv().addReporter(new SpecReporter({

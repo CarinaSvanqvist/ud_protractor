@@ -1,7 +1,7 @@
 var helper = require('C:/Users/Carina/udemy-protractor/helper.js')
 var faker = require('faker')
 var util = require('util')
-describe("Ëtsy MainPaige Register, Sign in", function () {
+describe("Ëtsy MainPage Register, Sign in", function () {
 
     beforeEach(function () {
         browser.get(browser.params.url);
